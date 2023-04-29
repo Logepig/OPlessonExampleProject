@@ -10,9 +10,9 @@ public:
 	Group(string nm);
 	~Group();
 
-	string converter(Student ls, int sz, int nm);
+	string converter(Student ls, int sz, string nm);
 	int getSize(int sz);
 	void add(Student student);
-	void kick(Student student);
+	void kick(int index);
 	Student get(int index);
 };
