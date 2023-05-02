@@ -2,6 +2,9 @@
 #include "Group.h"
 class Manager {
 public:
-	float calcStudentAvgAge(Group group);
-	float calcStudentAvgMark();
+	float calcStudentsAvgAge(Group group);
+	float calcStudentsAvgMark(Group group);
+	Student findBestStudents(Group group); 
+	Student findWorstStudents(Group group);
+
 };
