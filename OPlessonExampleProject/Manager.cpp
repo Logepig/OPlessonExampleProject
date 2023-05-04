@@ -1,6 +1,6 @@
 #include "Managerconnector.h"
 
-float Manager::calcStudentsAvgAge(Group group); {
+float Manager::calcStudentsAvgAge(Group group) {
 	
 	float avg = 0;
 	for (int i = 0; i < group.getSize(); i++) {
