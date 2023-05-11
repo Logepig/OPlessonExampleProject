@@ -4,10 +4,12 @@
 
 class Student {
 private:
+	static int count;
 	string name;
 	string surname;
 	int age;
 	float avg_mark;
+
 
 public:
 	static const int MIN_AGE = 0;
@@ -32,6 +34,7 @@ public:
 	void set_age(int a);
 	float get_avg_mark();
 	void set_avg_mark(float mark);
+	static int get_count();
 
 	void init(string n, string sname, int a, float mark);
 	void init_default();

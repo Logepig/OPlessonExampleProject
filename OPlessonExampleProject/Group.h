@@ -11,7 +11,7 @@ public:
 	~Group();
 
 	string converter(Student ls, int sz, string nm);
-	int getSize(int sz);
+	int getSize();
 	void add(Student student);
 	void kick(int index);
 	Student get(int index);

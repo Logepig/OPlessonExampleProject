@@ -5,7 +5,7 @@ float Manager::calcStudentsAvgAge(Group group) {
 	float avg = 0;
 	for (int i = 0; i < group.getSize(); i++) {
 		Student st = group.get(i);
-		avg += st.getAge();
+		avg += st.get_age();
 	}
 
 	return avg /= group.getSize();

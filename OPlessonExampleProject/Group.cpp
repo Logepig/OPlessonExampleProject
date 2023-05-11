@@ -27,10 +27,11 @@ string Group::converter(Student ls, int sz, string nm) {
 	string msg = "Student list of " + nm + ":";
 	for (int i = 0; i < size; i++) {
 		Student st = list[i];
-		msg += "\n" + to_string(i + 1) + ") " + st.convert_to_string();
+		msg += "\n" + to_string(i + 1) + " " + st.convert_to_string();
 	}
+	return msg;
 }
-int Group::getSize(int sz) {
+int Group::getSize() {
 	return size;
 }
 void Group::add(Student student){

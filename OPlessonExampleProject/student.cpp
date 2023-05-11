@@ -25,6 +25,11 @@ void Student::set_age(int a) {
 		age = a;
 	}
 }
+int Student::count = 0;
+
+int Student::get_count() {
+	return count;
+}
 
 float Student::get_avg_mark() {
 	return avg_mark;
@@ -43,6 +48,7 @@ Student::Student() {
 	surname = "no surname";
 	age = 16;
 	avg_mark = 4;
+	count += 1;
 }
 
 // constructor with params (with args)
@@ -52,12 +58,14 @@ Student::Student(string n, string sname, int a, float mark) {
 	surname = sname;
 	age = a;
 	avg_mark = mark;
+	count += 1;
 }
 
 Student::Student(string n, string sname) {
 	//cout << "constructor with params" << endl;
 	name = n;
 	surname = sname;
+	count += 1;
 }
 
 Student::Student(int a) {
@@ -78,7 +86,7 @@ Student::Student(const Student& student) {
 }
 
 Student::~Student() {
-	//cout << "called Student destructor" << endl;
+	count -= 1;
 }
 
 void Student::init(string n, string sname, int a, float mark) {
@@ -96,6 +104,6 @@ void Student::init_default() {
 }
 
 string Student::convert_to_string() {
-	return name + " " + surname + " (age = " + to_string(age)
+	return name + " " + surname + " age = " + to_string(age)
 		+ ", average mark = " + to_string(avg_mark) + ")";
 }
