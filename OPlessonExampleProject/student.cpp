@@ -47,19 +47,6 @@ Student::~Student() {
 	count -= 1;
 }
 
-void Student::init(string n, string sname, int a, float mark) {
-	name = n;
-	surname = sname;
-	age = a;
-	avg_mark = mark;
-}
-
-void Student::init_default() {
-	name = "no name";
-	surname = "no surname";
-	age = 0;
-	avg_mark = 0;
-}
 
 string Student::convert_to_string() {
 	return name + " " + surname + " age = " + to_string(age)
