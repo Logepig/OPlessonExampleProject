@@ -51,12 +51,6 @@ Human::Human(string n, string sname, int a) {
 	count += 1;
 }
 
-void Human::set_age(int a) {
-	//cout << "constructor with params" << endl;
-	age = a;
-}
-
-
 
 
 Human::~Human() {
